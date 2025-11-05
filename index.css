@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-image: url(Bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;   
+  background-attachment: fixed;
+  
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+}
+
+
