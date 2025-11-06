@@ -18,7 +18,7 @@
     <div class=" h-screen ">
 
         <div
-            class="bg-white border border-gray-200 gap-6 md:gap-4 flex flex-row p-2 items-center fixed top-0 left-0 w-full z-50">
+            class="bg-white border border-gray-200 gap-6 md:gap-4 flex flex-row px-3 py-2  items-center fixed top-0 left-0 w-full z-50">
             <div class="flex flex-row gap-2 items-center">
                 <div
                     class="p-4 bg-gradient-to-tr from-cyan-700 to-cyan-500 rounded-xl w-8.5 h-8.5 flex items-center justify-center">
@@ -31,7 +31,8 @@
                 </div>
             </div>
 
-            <div class="flex-grow flex flex-row gap-4 items-center justify-center">
+            <div class="flex-grow flex flex-row gap-4 items-end justify-end">
+
                 <div class="hidden md:flex flex-row gap-4 lg:gap-7 mx-auto">
                     <a href="Home.html"
                         class="text-xs lg:text-sm text-[#0891b2] underline font-medium hover:text-[#0891b2] hover:underline underline-offset-4 decoration-[#0891b2] transition">Home</a>
@@ -54,11 +55,10 @@
                     <div class="fixed inset-0 bg-black/30 hidden peer-checked:block transition-opacity duration-300">
                     </div>
                     <div
-                        class="fixed top-0 right-0 h-full w-50 bg-white border-l border-gray-200 shadow-lg transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 flex flex-col p-4 z-50">
-                        <label for="menuToggle" class="self-end cursor-pointer mb-4">
-                            <i class="bi bi-x-lg text-xl text-[#0891b2]"></i>
-                        </label>
-                        <div class="flex flex-row gap-2 items-center mb-5">
+                        class="flex justify-between fixed top-0 right-0 h-full w-50 bg-white border-l border-gray-200 shadow-lg transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 flex flex-col p-6 z-50">
+                       <div class="flex flex-col">
+                        <div class="flex flex-row items-center gap-5 justify-between mb-6"> 
+                        <div class="flex flex-row gap-2 items-center justify-center">
                             <div
                                 class="p-4 bg-gradient-to-tr from-cyan-700 to-cyan-500 rounded-xl w-8.5 h-8.5 flex items-center justify-center">
                                 <i class="bi bi-stars text-white"></i>
@@ -70,6 +70,10 @@
                                         class="text-[#0891b2]">AI</span> tools linked in one place</p>
                             </div>
                         </div>
+                        <label for="menuToggle" class="self-end cursor-pointer mb-2">
+                            <i class="bi bi-x-lg text-sm text-[#0891b2]"></i>
+                        </label></div>
+                       
                         <a href="Home.html"
                             class="px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 border-b border-gray-200">Home</a>
                         <a href="Explore.html"
@@ -81,6 +85,8 @@
                         <a href="MyTool.html"
                             class="px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 border-b border-gray-200">My
                             Tool</a>
+                            </div>
+                            <div class="flex flex-col mb-8">
                         <div class="flex flex-row gap-2 items-center mt-6 pt-4">
                             <div
                                 class="p-3 bg-gradient-to-tr from-cyan-700 to-cyan-500 rounded-full w-9 h-9 flex items-center justify-center">
@@ -88,17 +94,20 @@
                             </div>
                             <div>
                                 <p class="text-sm font-medium text-slate-800">Thenmozhi</p>
-                                <p class="text-[10px] text-gray-500">thenmozhi@company.com</p>
+                                <p class="text-[8px] text-gray-500">thenmozhi@company.com</p>
                             </div>
                         </div>
+                        <div class="flex flex-col gap-4 mt-6">
                         <a href="Profile.html"
-                            class="flex items-center gap-2 px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 mt-2">
+                            class="flex items-center gap-2  text-sm text-gray-700 hover:bg-gray-50">
                             <i class="bi bi-person text-gray-500"></i> View Account
                         </a>
                         <a href="Signin.html"
-                            class="flex items-center gap-2 px-4 py-3 text-sm text-gray-700 hover:bg-gray-50">
+                            class="flex items-center gap-2  text-sm text-gray-700 hover:bg-gray-50">
                             <i class="bi bi-box-arrow-right text-gray-500"></i> Logout
                         </a>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -120,7 +129,7 @@
                         </div>
                         <div>
                             <p class="text-sm font-medium text-slate-800">Thenmozhi</p>
-                            <p class="text-xs text-gray-500">thenmozhi@company.com</p>
+                            <p class="text-[10px] lg:text-xs text-gray-500">thenmozhi@company.com</p>
                         </div>
                     </label>
                     <div
@@ -138,11 +147,12 @@
                 </div>
             </div>
         </div>
-        <div class="h-16 md:h-20"></div>
+
+        <div class="h-16 md:h-13 lg:h-15"></div>
 
         <div class="max-w-7xl mx-auto px-6 md:px-8 lg:px-15 py-9">
 
-            <div class="flex flex-col md:flex-row items-startS md:items-center justify-between p-8 rounded-2xl mb-12 gap-8 md:gap-3"
+            <div class="flex flex-col md:flex-row items-startS md:items-center justify-between p-6 md:p-8 rounded-2xl mb-6 md:mb-12 gap-8 md:gap-3"
                 style="background: linear-gradient(135deg, rgba(8, 145, 178, 0.08) 0%, rgba(139, 92, 246, 0.08) 50%, rgba(6, 182, 212, 0.08) 100%);">
                 <div class="flex flex-col  gap-2">
                     <div class="flex flex-row items-center gap-2">
@@ -172,7 +182,7 @@
                     </div>
                 </div>
 
-                <div class="relative  w-28 h-28 md:w-24 md:h-24 lg:w-30 lg:h-30  rounded-2xl flex items-center justify-center border"
+                <div class="relative  w-28 h-28 md:w-24 md:h-24 lg:w-30 lg:h-30  rounded-2xl hidden md:flex items-center justify-center border"
                     style="background: linear-gradient(135deg, rgba(8,145,178,0.1) 0%, rgba(139,92,246,0.1) 100%); border: 1px solid rgba(8,145,178,0.2);">
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -201,7 +211,7 @@
             </div>
 
             <div
-                class="flex flex-col md:flex-row justify-between items-startS md:items-center border border-[#fde047] bg-[#fefce8] rounded-2xl mb-8 p-6">
+                class="flex flex-col md:flex-row justify-between items-startS md:items-center border border-[#fde047] bg-[#fefce8] rounded-2xl mb-6 md:mb-8 p-6">
                 <div class="flex flex-col md:flex-row items-startS md:items-center gap-3">
                     <div class="p-4 bg-[#eab308] rounded-xl w-8.5 h-8.5 items-center justify-center flex ">
                         <i class="bi bi-yin-yang text-white"></i>
@@ -220,7 +230,7 @@
             </div>
 
             <div
-                class="flex flex-col md:flex-row items-startS md:items-center gap-2 text-[10px] lg:text-xs text-[#64748b] font-medium bg-gray-50 rounded-xl p-2 overflow-x-auto w-full mb-8">
+                class="grid grid-cols-2 md:grid-cols-8  gap-2 text-[10px] lg:text-xs text-[#64748b] font-medium bg-gray-50 rounded-xl p-2 mb-6 md:mb-8">
 
                 <button
                     class="flex flex-row items-center gap-2 px-2 lg:px-4 py-2 rounded-xl transition-all focus:bg-white focus:shadow-md focus:text-[#0891b2] active:bg-white active:shadow-md active:text-[#0891b2] hover:bg-white hover:shadow-md hover:text-[#0891b2]">
@@ -265,7 +275,7 @@
             </div>
 
 
-            <div class="flex flex-col md:flex-row items-center justify-between mb-8">
+            <div class="flex flex-col md:flex-row items-center justify-between mb-6 md:mb-8">
                 <div class="flex flex-col gap-2">
                     <p class="text-base text-[#1e293b] font-semibold">Recommended for You</p>
                     <p class="text-xs text-[#64748b]">Based on your role and interests</p>
