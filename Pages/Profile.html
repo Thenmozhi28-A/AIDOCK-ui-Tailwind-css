@@ -2,263 +2,295 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="../index.css">
-    <title>AIDOCK</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../index.css">
+  <title>AIDOCK</title>
 </head>
 
 <body>
-    <div class="h-screen">
+  <div class="h-screen">
 
+    <div
+      class="bg-white border border-gray-200 gap-6 md:gap-4 flex flex-row p-2 items-center fixed top-0 left-0 w-full z-50">
+
+      <div class="flex flex-row gap-2 items-center">
         <div
-            class="bg-white border border-gray-200 gap-6 md:gap-4 flex flex-col md:flex-row p-2 justify-around items-center">
-
-            <div class="flex flex-row gap-2 items-center ">
-                <div
-                    class="p-4 bg-gradient-to-tr from-cyan-700 to-cyan-500 rounded-xl w-8.5 h-8.5 items-center justify-center flex ">
-                    <i class="bi bi-stars text-white"></i>
-                </div>
-                <div>
-                    <p class="text-sm lg:text-xl font-semibold"><span class="text-[#0891b2]">Ai</span>Dock</p>
-                    <p class="text-[8px] md:text-xs lg:text-[10px] text-gray-500 ">All <span
-                            class="text-[#0891b2]">AI</span> tools
-                        linked in one
-                        place
-                    </p>
-                </div>
-            </div>
-
-            <div class="flex flex-row gap-4 lg:gap-7 ">
-                <a href="Home.html"
-                    class="text-xs lg:text-sm text-[#64748b] font-medium hover:text-[#0891b2] hover:underline underline-offset-4 decoration-[#0891b2] transition">
-                    Home
-                </a>
-
-                <a href="Explore.html"
-                    class="text-xs lg:text-sm text-[#64748b] font-medium hover:text-[#0891b2] hover:underline underline-offset-4 decoration-[#0891b2] transition">
-                    Explore Tools
-                </a>
-
-                <a href="AddTool.html"
-                    class="text-xs lg:text-sm text-[#64748b] font-medium hover:text-[#0891b2] hover:underline underline-offset-4 decoration-[#0891b2] transition">
-                    Add Tool
-                </a>
-
-                <a href="MyTool.html"
-                    class="text-xs lg:text-sm text-[#64748b] font-medium hover:text-[#0891b2] hover:underline underline-offset-4 decoration-[#0891b2] transition">
-                    My Tool
-                </a>
-            </div>
-
-            <div class="flex flex-row gap-4 items-center justify-center">
-                <div
-                    class="invisible md:visible relative border border-gray-200 p-2 w-5 h-5 lg:w-8 lg:h-8 rounded-2xl flex items-center justify-center ">
-                    <i class="bi bi-bell text-[#64748b] text-xs lg:text-sm"></i>
-
-                    <div
-                        class="absolute -top-1 -right-1 bg-gradient-to-tr from-[#0891b2] to-[#06b6d4] text-white text-[6px] lg:text-[8px] font-semibold w-3 h-3 lg:w-4 lg:h-4 rounded-full flex items-center justify-center ">
-                        2
-                    </div>
-                </div>
-
-                <div class="relative">
-                    <input type="checkbox" id="dropdownToggle" class="peer hidden">
-
-                    <label for="dropdownToggle" class="flex flex-row gap-2 items-center justify-center cursor-pointer">
-                        <div
-                            class="p-2 lg:p-4 bg-gradient-to-tr from-cyan-700 to-cyan-500 rounded-full w-8 h-8 flex items-center justify-center">
-                            <i class="bi bi-person text-white text-lg"></i>
-                        </div>
-                        <div>
-                            <p class="text-sm font-medium text-slate-800">Thenmozhi</p>
-                            <p class="text-xs text-gray-500">thenmozhi@company.com</p>
-                        </div>
-                    </label>
-
-                    <div
-                        class="absolute right-0 mt-2 w-40 bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hidden peer-checked:flex flex-col">
-                        <a href="Profile.html"
-                            class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">
-                            <i class="bi bi-person text-gray-500"></i>
-                            View Account
-                        </a>
-                        <hr class="border border-gray-200">
-                        <a href="Signin.html"
-                            class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">
-                            <i class="bi bi-box-arrow-right text-gray-500"></i>
-                            Logout
-                        </a>
-                    </div>
-                </div>
-            </div>
+          class="p-4 bg-gradient-to-tr from-cyan-700 to-cyan-500 rounded-xl w-8.5 h-8.5 flex items-center justify-center">
+          <i class="bi bi-stars text-white"></i>
         </div>
+        <div>
+          <p class="text-sm lg:text-xl font-semibold"><span class="text-[#0891b2]">Ai</span>Dock</p>
+          <p class="text-[10px] text-gray-500">All <span class="text-[#0891b2]">AI</span>
+            tools linked in one place</p>
+        </div>
+      </div>
 
-        <div class="max-w-4xl mx-auto px-6 py-8">
+      <div class="flex-grow flex flex-row gap-4 items-center justify-center">
+        <div class="hidden md:flex flex-row gap-4 lg:gap-7 mx-auto">
+                    <a href="Home.html"
+                        class="text-xs lg:text-sm text-[#64748b] font-medium hover:text-[#0891b2] hover:underline underline-offset-4 decoration-[#0891b2] transition">Home</a>
+                    <a href="Explore.html"
+                        class="text-xs lg:text-sm text-[#64748b] font-medium hover:text-[#0891b2] hover:underline underline-offset-4 decoration-[#0891b2] transition">Explore
+                        Tools</a>
+                    <a href="AddTool.html"
+                        class="text-xs lg:text-sm text-[#64748b] font-medium hover:text-[#0891b2] hover:underline underline-offset-4 decoration-[#0891b2] transition">Add
+                        Tool</a>
+                    <a href="MyTool.html"
+                        class="text-xs lg:text-sm text-[#64748b] font-medium hover:text-[#0891b2] hover:underline underline-offset-4 decoration-[#0891b2] transition">My
+                        Tool</a>
+                </div>
+
+        <div class="relative md:hidden">
+          <input type="checkbox" id="menuToggle" class="peer hidden" />
+          <label for="menuToggle" class="cursor-pointer flex items-center justify-center p-2">
+            <i class="bi bi-list text-3xl text-[#0891b2]"></i>
+          </label>
+          <div class="fixed inset-0 bg-black/30 hidden peer-checked:block transition-opacity duration-300"></div>
+          <div
+            class="fixed top-0 right-0 h-full w-50 bg-white border-l border-gray-200 shadow-lg transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 flex flex-col p-4 z-50">
+            <label for="menuToggle" class="self-end cursor-pointer mb-4">
+              <i class="bi bi-x-lg text-xl text-[#0891b2]"></i>
+            </label>
+            <div class="flex flex-row gap-2 items-center mb-5">
+              <div
+                class="p-4 bg-gradient-to-tr from-cyan-700 to-cyan-500 rounded-xl w-8.5 h-8.5 flex items-center justify-center">
+                <i class="bi bi-stars text-white"></i>
+              </div>
+              <div>
+                <p class="text-sm lg:text-xl font-semibold"><span class="text-[#0891b2]">Ai</span>Dock</p>
+                <p class="text-[8px] md:text-xs lg:text-[10px] text-gray-500">All <span class="text-[#0891b2]">AI</span>
+                  tools linked in one place</p>
+              </div>
+            </div>
+            <a href="Home.html"
+              class="px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 border-b border-gray-200">Home</a>
+            <a href="Explore.html"
+              class="px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 border-b border-gray-200">Explore
+              Tools</a>
+            <a href="AddTool.html"
+              class="px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 border-b border-gray-200">Add
+              Tool</a>
+            <a href="MyTool.html"
+              class="px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 border-b border-gray-200">My Tool</a>
+            <div class="flex flex-row gap-2 items-center mt-6 pt-4">
+              <div
+                class="p-3 bg-gradient-to-tr from-cyan-700 to-cyan-500 rounded-full w-9 h-9 flex items-center justify-center">
+                <i class="bi bi-person text-white text-lg"></i>
+              </div>
+              <div>
+                <p class="text-sm font-medium text-slate-800">Thenmozhi</p>
+                <p class="text-[10px] text-gray-500">thenmozhi@company.com</p>
+              </div>
+            </div>
+            <a href="Profile.html"
+              class="flex items-center gap-2 px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 mt-2">
+              <i class="bi bi-person text-gray-500"></i> View Account
+            </a>
+            <a href="Signin.html" class="flex items-center gap-2 px-4 py-3 text-sm text-gray-700 hover:bg-gray-50">
+              <i class="bi bi-box-arrow-right text-gray-500"></i> Logout
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden md:flex flex-row gap-4 items-center justify-center">
+        <div
+          class="relative border border-gray-200 p-2 w-5 h-5 lg:w-8 lg:h-8 rounded-2xl flex items-center justify-center">
+          <i class="bi bi-bell text-[#64748b] text-xs lg:text-sm"></i>
+          <div
+            class="absolute -top-1 -right-1 bg-gradient-to-tr from-[#0891b2] to-[#06b6d4] text-white text-[6px] lg:text-[8px] font-semibold w-3 h-3 lg:w-4 lg:h-4 rounded-full flex items-center justify-center">
+            2</div>
+        </div>
+        <div class="relative">
+          <input type="checkbox" id="dropdownToggle" class="peer hidden" />
+          <label for="dropdownToggle" class="flex flex-row gap-2 items-center justify-center cursor-pointer">
+            <div
+              class="p-2 lg:p-4 bg-gradient-to-tr from-cyan-700 to-cyan-500 rounded-full w-8 h-8 flex items-center justify-center">
+              <i class="bi bi-person text-white text-lg"></i>
+            </div>
+            <div>
+              <p class="text-sm font-medium text-slate-800">Thenmozhi</p>
+              <p class="text-xs text-gray-500">thenmozhi@company.com</p>
+            </div>
+          </label>
+          <div
+            class="absolute right-0 mt-2 w-40 bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hidden peer-checked:flex flex-col">
+            <a href="Profile.html" class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">
+              <i class="bi bi-person text-gray-500"></i> View Account
+            </a>
+            <hr class="border border-gray-200" />
+            <a href="Signin.html" class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">
+              <i class="bi bi-box-arrow-right text-gray-500"></i> Logout
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="h-16 md:h-20"></div>
+    <div class="max-w-4xl mx-auto px-6 py-8">
+
+      <div>
+        <p class="text-2xl mb-2 text-[#1e293b] font-[600]">Account Settings</p>
+        <p class="text-sm text-[#64748b]">Manage your profile information and preferences</p>
+      </div>
+
+      <div class="rounded-2xl p-8 mb-6 mt-8 border border-gray-200" style="background: white; ">
+
+        <div class="flex flex-col md:flex-row justify-between">
+          <div class="flex flex-col md:flex-row gap-7">
+            <div class="flex items-start gap-6 mb-0 md:mb-8 pb-0 md:pb-8"
+              style="border-bottom: 1px solid var(--border);">
+              <div class="relative">
+                <div class="w-24 h-24 rounded-2xl flex items-center justify-center "
+                  style="background: linear-gradient(135deg, rgb(8, 145, 178) 0%, rgb(6, 182, 212) 100%);">
+                  <i class="bi bi-person text-white text-5xl"></i>
+                </div>
+                <div
+                  class="absolute -bottom-2 -right-2 w-9 h-9 rounded-full flex items-center justify-center bg-white transition-all hover:scale-105"
+                  style="border: 2px solid var(--border); box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 8px;">
+                  <i class="bi bi-camera text-blue-500"></i>
+                </div>
+              </div>
+            </div>
 
             <div>
-                <p class="text-2xl mb-2 text-[#1e293b] font-[600]">Account Settings</p>
-                <p class="text-sm text-[#64748b]">Manage your profile information and preferences</p>
-            </div>
+              <p class="text-lg text-[#1e293b] font-bold">John Doe</p>
+              <p class="text-sm text-[#64748b]">Product Manager at Tech Innovations Inc.</p>
 
-            <div class="rounded-2xl p-8 mb-6 mt-8 border border-gray-200" style="background: white; ">
-
-                <div class="flex flex-col md:flex-row justify-between">
-                    <div class="flex flex-col md:flex-row gap-7">
-                        <div class="flex items-start gap-6 mb-0 md:mb-8 pb-0 md:pb-8"
-                            style="border-bottom: 1px solid var(--border);">
-                            <div class="relative">
-                                <div class="w-24 h-24 rounded-2xl flex items-center justify-center "
-                                    style="background: linear-gradient(135deg, rgb(8, 145, 178) 0%, rgb(6, 182, 212) 100%);">
-                                    <i class="bi bi-person text-white text-5xl"></i>
-                                </div>
-                                <div class="absolute -bottom-2 -right-2 w-9 h-9 rounded-full flex items-center justify-center bg-white transition-all hover:scale-105"
-                                    style="border: 2px solid var(--border); box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 8px;">
-                                    <i class="bi bi-camera text-blue-500"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <p class="text-lg text-[#1e293b] font-bold">John Doe</p>
-                            <p class="text-sm text-[#64748b]">Product Manager at Tech Innovations Inc.</p>
-
-                            <div class="flex flex-row gap-4 mt-5">
-                                <div class="flex flex-col">
-                                    <p class="text-[#0891b2] font-bold text-lg">8</p>
-                                    <p class="text-xs text-[#64748b]">Save Tools</p>
-                                </div>
-                                <hr class="border border-gray-200 h-10" />
-                                <div class="flex flex-col">
-                                    <p class="text-[#0891b2] font-bold text-lg">3</p>
-                                    <p class="text-xs text-[#64748b]">Tools Added</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="border border-[#0891b233] mt-6 md:mt-0 h-fit px-3 py-1.5 rounded-2xl text-[#0891b2] text-sm">
-                        <button><i class="bi bi-pen"></i> Edit Profile</button>
-                    </div>
+              <div class="flex flex-row gap-4 mt-5">
+                <div class="flex flex-col">
+                  <p class="text-[#0891b2] font-bold text-lg">8</p>
+                  <p class="text-xs text-[#64748b]">Save Tools</p>
+                </div>
+                <hr class="border border-gray-200 h-10" />
+                <div class="flex flex-col">
+                  <p class="text-[#0891b2] font-bold text-lg">3</p>
+                  <p class="text-xs text-[#64748b]">Tools Added</p>
                 </div>
 
-                <hr class="border border-gray-200 mt-8 md:mt-0" />
+              </div>
+            </div>
+          </div>
+          <div class="border border-[#0891b233] mt-6 md:mt-0 h-fit px-3 py-1.5 rounded-2xl text-[#0891b2] text-sm">
+            <button><i class="bi bi-pen"></i> Edit Profile</button>
+          </div>
+        </div>
 
-                <div class="mt-8">
+        <hr class="border border-gray-200 mt-8 md:mt-0" />
 
-                    <p class="text-[#1e293b] text-lg font-[600]">Personal Information</p>
+        <div class="mt-8">
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
+          <p class="text-[#1e293b] text-lg font-[600]">Personal Information</p>
 
-                        <div class="flex flex-col gap-3">
-                            <label class="text-sm text-[#64748b] font-[500]">Full Name</label>
-                            <div
-                                class="flex items-center gap-2 border border-gray-200 rounded-2xl px-4 py-3 text-xs text-[#1f2739]
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
+
+            <div class="flex flex-col gap-3">
+              <label class="text-sm text-[#64748b] font-[500]">Full Name</label>
+              <div
+                class="flex items-center gap-2 border border-gray-200 rounded-2xl px-4 py-3 text-xs text-[#1f2739]
                                  focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition font-medium">
-                                <i class="bi bi-person text-gray-400 text-sm"></i>
-                                <input type="text" placeholder="Ziva"
-                                    class="w-full outline-none bg-transparent text-[#1f2739] placeholder:text-gray-400" />
-                            </div>
-                        </div>
+                <i class="bi bi-person text-gray-400 text-sm"></i>
+                <input type="text" placeholder="Ziva"
+                  class="w-full outline-none bg-transparent text-[#1f2739] placeholder:text-gray-400" />
+              </div>
+            </div>
 
-                        <div class="flex flex-col gap-3">
-                            <label class="text-sm text-[#64748b] font-[500]">Email Address</label>
-                            <div
-                                class="flex items-cente gap-2 border border-gray-200 rounded-2xl py-3 px-4 text-xs text-[#1f2739] focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition font-medium">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-400 " fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M3 8l9 6 9-6m-18 0a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" />
-                                </svg>
-                                <input type="email" placeholder="You@company.com"
-                                    class="w-full outline-none text-[#1f2739]" />
-                            </div>
-                        </div>
+            <div class="flex flex-col gap-3">
+              <label class="text-sm text-[#64748b] font-[500]">Email Address</label>
+              <div
+                class="flex items-cente gap-2 border border-gray-200 rounded-2xl py-3 px-4 text-xs text-[#1f2739] focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-400 " fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 8l9 6 9-6m-18 0a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" />
+                </svg>
+                <input type="email" placeholder="You@company.com" class="w-full outline-none text-[#1f2739]" />
+              </div>
+            </div>
 
-                        <div class="flex flex-col gap-3">
-                            <label class="text-sm text-[#64748b] font-[500]">Company</label>
-                            <div
-                                class="flex items-cente gap-2 border border-gray-200 rounded-2xl py-3 px-4 text-xs text-[#1f2739] focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition font-medium">
-                                <i class="bi bi-building text-gray-400 text-sm"></i>
-                                <input type="email" placeholder="Tech Innovations Inc."
-                                    class="w-full outline-none text-[#1f2739]" />
-                            </div>
-                        </div>
+            <div class="flex flex-col gap-3">
+              <label class="text-sm text-[#64748b] font-[500]">Company</label>
+              <div
+                class="flex items-cente gap-2 border border-gray-200 rounded-2xl py-3 px-4 text-xs text-[#1f2739] focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition font-medium">
+                <i class="bi bi-building text-gray-400 text-sm"></i>
+                <input type="email" placeholder="Tech Innovations Inc." class="w-full outline-none text-[#1f2739]" />
+              </div>
+            </div>
 
-                        <div class="flex flex-col gap-3">
-                            <label class="text-sm text-[#64748b] font-[500]">Role</label>
-                            <div
-                                class="flex items-center gap-2 border border-gray-200 rounded-2xl px-4 py-3 text-xs text-[#1f2739]
+            <div class="flex flex-col gap-3">
+              <label class="text-sm text-[#64748b] font-[500]">Role</label>
+              <div
+                class="flex items-center gap-2 border border-gray-200 rounded-2xl px-4 py-3 text-xs text-[#1f2739]
                                    focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition font-medium">
-                                <i class="bi bi-shield text-gray-400 text-sm"></i>
-                                <input type="text" placeholder="Product Manager"
-                                    class="w-full outline-none bg-transparent text-[#1f2739] placeholder:text-gray-400" />
-                            </div>
-                        </div>
+                <i class="bi bi-shield text-gray-400 text-sm"></i>
+                <input type="text" placeholder="Product Manager"
+                  class="w-full outline-none bg-transparent text-[#1f2739] placeholder:text-gray-400" />
+              </div>
+            </div>
 
-                        <div class="flex flex-col gap-3">
-                            <label class="text-sm text-[#64748b] font-[500]">Member Since</label>
-                            <div
-                                class="flex items-cente gap-2 border border-gray-200 rounded-2xl py-3 px-4 text-xs text-[#1f2739] focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition font-medium">
-                                <i class="bi bi-calendar text-gray-400 text-sm"></i>
-                                <input type="email" placeholder="Nov / 5 / 2025"
-                                    class="w-full outline-none text-[#1f2739]" />
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
+            <div class="flex flex-col gap-3">
+              <label class="text-sm text-[#64748b] font-[500]">Member Since</label>
+              <div
+                class="flex items-cente gap-2 border border-gray-200 rounded-2xl py-3 px-4 text-xs text-[#1f2739] focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition font-medium">
+                <i class="bi bi-calendar text-gray-400 text-sm"></i>
+                <input type="email" placeholder="Nov / 5 / 2025" class="w-full outline-none text-[#1f2739]" />
+              </div>
             </div>
 
 
-            <div class="mt-8 rounded-2xl p-8 mb-6 mt-8 border border-gray-200" style="background: white;">
-
-                <p class="text-lg mb-2 text-[#1e293b] font-[600]">Account Activity</p>
-
-                <div class="mt-6 grid-cols-1 md:grid grid-cols-3 gap-6">
-                    <div class="p-6 rounded-2xl" style="background: rgba(8, 145, 178, 0.04);">
-                        <div class=" w-10 p-3 rounded-xl h-10 flex items-center justify-center mb-4"
-                            style="background: linear-gradient(135deg, rgba(8, 145, 178, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);">
-                            <i class="bi bi-person text-[#0891b2] text-xl"></i>
-                        </div>
-                        <p class="text-[#1e293b] text-xl font-[600]">8</p>
-                        <p class="text-[#64748b] text-sm">Tools Saved</p>
-                    </div>
-                    <div class="p-6 rounded-2xl mt-6 md:mt-0" style="background: rgba(8, 145, 178, 0.04);">
-                        <div class=" w-10 p-3 rounded-xl h-10 flex items-center justify-center mb-4 "
-                            style="background: linear-gradient(135deg, rgba(8, 145, 178, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);">
-                            <i class="bi bi-pen text-[#0891b2] text-xl"></i>
-                        </div>
-                        <p class="text-[#1e293b] text-xl font-[600]">3</p>
-                        <p class="text-[#64748b] text-sm">Tools Added</p>
-                    </div>
-                    <div class="p-6 rounded-2xl mt-6 md:mt-0" style="background: rgba(8, 145, 178, 0.04);">
-                        <div class=" w-10 p-3 rounded-xl h-10 flex items-center justify-center mb-4"
-                            style="background: linear-gradient(135deg, rgba(8, 145, 178, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);">
-                            <i class="bi bi-calendar text-[#0891b2] text-xl"></i>
-                        </div>
-                        <p class="text-[#1e293b] text-xl font-[600]">45</p>
-                        <p class="text-[#64748b] text-sm">Days Active</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
 
 
-        <div class=" fixed bottom-1 lg:bottom-4 right-2 md:right-6">
-            <div
-                class="p-4 bg-gradient-to-tr from-cyan-700 to-cyan-500 rounded-full w-10 h-10 items-center justify-center flex">
-                <i class="bi bi-stars text-white"></i>
+      <div class="mt-8 rounded-2xl p-8 mb-6 mt-8 border border-gray-200" style="background: white;">
+
+        <p class="text-lg mb-2 text-[#1e293b] font-[600]">Account Activity</p>
+
+        <div class="mt-6 grid-cols-1 md:grid grid-cols-3 gap-6">
+          <div class="p-6 rounded-2xl" style="background: rgba(8, 145, 178, 0.04);">
+            <div class=" w-10 p-3 rounded-xl h-10 flex items-center justify-center mb-4"
+              style="background: linear-gradient(135deg, rgba(8, 145, 178, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);">
+              <i class="bi bi-person text-[#0891b2] text-xl"></i>
             </div>
+            <p class="text-[#1e293b] text-xl font-[600]">8</p>
+            <p class="text-[#64748b] text-sm">Tools Saved</p>
+          </div>
+          <div class="p-6 rounded-2xl mt-6 md:mt-0" style="background: rgba(8, 145, 178, 0.04);">
+            <div class=" w-10 p-3 rounded-xl h-10 flex items-center justify-center mb-4 "
+              style="background: linear-gradient(135deg, rgba(8, 145, 178, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);">
+              <i class="bi bi-pen text-[#0891b2] text-xl"></i>
+            </div>
+            <p class="text-[#1e293b] text-xl font-[600]">3</p>
+            <p class="text-[#64748b] text-sm">Tools Added</p>
+          </div>
+          <div class="p-6 rounded-2xl mt-6 md:mt-0" style="background: rgba(8, 145, 178, 0.04);">
+            <div class=" w-10 p-3 rounded-xl h-10 flex items-center justify-center mb-4"
+              style="background: linear-gradient(135deg, rgba(8, 145, 178, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);">
+              <i class="bi bi-calendar text-[#0891b2] text-xl"></i>
+            </div>
+            <p class="text-[#1e293b] text-xl font-[600]">45</p>
+            <p class="text-[#64748b] text-sm">Days Active</p>
+          </div>
         </div>
+      </div>
     </div>
+
+
+    <div class=" fixed bottom-1 lg:bottom-4 right-2 md:right-6">
+      <div
+        class="p-4 bg-gradient-to-tr from-cyan-700 to-cyan-500 rounded-full w-10 h-10 items-center justify-center flex">
+        <i class="bi bi-stars text-white"></i>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

@@ -2,510 +2,552 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="../index.css">
-    <title>AIDOCK</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../index.css">
+  <title>AIDOCK</title>
 </head>
 
 <body>
-    <div class="h-screen">
-        
+  <div class="h-screen">
+
+    <div
+      class="bg-white border border-gray-200 gap-6 md:gap-4 flex flex-row p-2 items-center fixed top-0 left-0 w-full z-50">
+
+      <div class="flex flex-row gap-2 items-center">
         <div
-            class="bg-white border border-gray-200 gap-6 md:gap-4 flex flex-col md:flex-row p-2 justify-around items-center">
-            <div class="flex flex-row gap-2 items-center ">
-                <div
-                    class="p-4 bg-gradient-to-tr from-cyan-700 to-cyan-500 rounded-xl w-8.5 h-8.5 items-center justify-center flex ">
-                    <i class="bi bi-stars text-white"></i>
+          class="p-4 bg-gradient-to-tr from-cyan-700 to-cyan-500 rounded-xl w-8.5 h-8.5 flex items-center justify-center">
+          <i class="bi bi-stars text-white"></i>
+        </div>
+        <div>
+          <p class="text-sm lg:text-xl font-semibold"><span class="text-[#0891b2]">Ai</span>Dock</p>
+          <p class="text-[10px] text-gray-500">All <span class="text-[#0891b2]">AI</span>
+            tools linked in one place</p>
+        </div>
+      </div>
+
+      <div class="flex-grow flex flex-row gap-4 items-center justify-center">
+        <div class="hidden md:flex flex-row gap-4 lg:gap-7 mx-auto">
+                    <a href="Home.html"
+                        class="text-xs lg:text-sm text-[#64748b] font-medium hover:text-[#0891b2] hover:underline underline-offset-4 decoration-[#0891b2] transition">Home</a>
+                    <a href="Explore.html"
+                        class="text-xs lg:text-sm text-[#64748b] font-medium hover:text-[#0891b2] hover:underline underline-offset-4 decoration-[#0891b2] transition">Explore
+                        Tools</a>
+                    <a href="AddTool.html"
+                         class="text-xs lg:text-sm text-[#0891b2] underline font-medium hover:text-[#0891b2] hover:underline underline-offset-4 decoration-[#0891b2] transition">Add
+                        Tool</a>
+                    <a href="MyTool.html"
+                        class="text-xs lg:text-sm text-[#64748b] font-medium hover:text-[#0891b2] hover:underline underline-offset-4 decoration-[#0891b2] transition">My
+                        Tool</a>
                 </div>
-                <div>
-                    <p class="text-sm lg:text-xl font-semibold"><span class="text-[#0891b2]">Ai</span>Dock</p>
-                    <p class="text-[8px] md:text-xs lg:text-[10px] text-gray-500 ">All <span
-                            class="text-[#0891b2]">AI</span> tools
-                        linked in one
-                        place
-                    </p>
-                </div>
+        <div class="relative md:hidden">
+          <input type="checkbox" id="menuToggle" class="peer hidden" />
+          <label for="menuToggle" class="cursor-pointer flex items-center justify-center p-2">
+            <i class="bi bi-list text-3xl text-[#0891b2]"></i>
+          </label>
+          <div class="fixed inset-0 bg-black/30 hidden peer-checked:block transition-opacity duration-300"></div>
+          <div
+            class="fixed top-0 right-0 h-full w-50 bg-white border-l border-gray-200 shadow-lg transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 flex flex-col p-4 z-50">
+            <label for="menuToggle" class="self-end cursor-pointer mb-4">
+              <i class="bi bi-x-lg text-xl text-[#0891b2]"></i>
+            </label>
+            <div class="flex flex-row gap-2 items-center mb-5">
+              <div
+                class="p-4 bg-gradient-to-tr from-cyan-700 to-cyan-500 rounded-xl w-8.5 h-8.5 flex items-center justify-center">
+                <i class="bi bi-stars text-white"></i>
+              </div>
+              <div>
+                <p class="text-sm lg:text-xl font-semibold"><span class="text-[#0891b2]">Ai</span>Dock</p>
+                <p class="text-[8px] md:text-xs lg:text-[10px] text-gray-500">All <span class="text-[#0891b2]">AI</span>
+                  tools linked in one place</p>
+              </div>
             </div>
-
-            <div class="flex flex-row gap-4 lg:gap-7 ">
-                <a href="Home.html"
-                    class="text-xs lg:text-sm text-[#64748b] font-medium hover:text-[#0891b2] hover:underline underline-offset-4 decoration-[#0891b2] transition">
-                    Home
-                </a>
-
-                <a href="Explore.html"
-                    class="text-xs lg:text-sm text-[#64748b] font-medium hover:text-[#0891b2] hover:underline underline-offset-4 decoration-[#0891b2] transition">
-                    Explore Tools
-                </a>
-
-                <a href="AddTool.html"
-                    class="text-xs lg:text-sm  text-[#0891b2] underline font-medium hover:text-[#0891b2] hover:underline underline-offset-4 decoration-[#0891b2] transition">
-                    Add Tool
-                </a>
-
-                <a href="MyTool.html"
-                    class="text-xs lg:text-sm text-[#64748b] font-medium hover:text-[#0891b2] hover:underline underline-offset-4 decoration-[#0891b2] transition">
-                    My Tool
-                </a>
+            <a href="Home.html"
+              class="px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 border-b border-gray-200">Home</a>
+            <a href="Explore.html"
+              class="px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 border-b border-gray-200">Explore
+              Tools</a>
+            <a href="AddTool.html"
+              class="px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 border-b border-gray-200">Add
+              Tool</a>
+            <a href="MyTool.html"
+              class="px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 border-b border-gray-200">My Tool</a>
+            <div class="flex flex-row gap-2 items-center mt-6 pt-4">
+              <div
+                class="p-3 bg-gradient-to-tr from-cyan-700 to-cyan-500 rounded-full w-9 h-9 flex items-center justify-center">
+                <i class="bi bi-person text-white text-lg"></i>
+              </div>
+              <div>
+                <p class="text-sm font-medium text-slate-800">Thenmozhi</p>
+                <p class="text-[10px] text-gray-500">thenmozhi@company.com</p>
+              </div>
             </div>
+            <a href="Profile.html"
+              class="flex items-center gap-2 px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 mt-2">
+              <i class="bi bi-person text-gray-500"></i> View Account
+            </a>
+            <a href="Signin.html" class="flex items-center gap-2 px-4 py-3 text-sm text-gray-700 hover:bg-gray-50">
+              <i class="bi bi-box-arrow-right text-gray-500"></i> Logout
+            </a>
+          </div>
+        </div>
+      </div>
 
-            <div class="flex flex-row gap-4 items-center justify-center">
-                <div
-                    class="invisible md:visible relative border border-gray-200 p-2 w-5 h-5 lg:w-8 lg:h-8 rounded-2xl flex items-center justify-center ">
-                    <i class="bi bi-bell text-[#64748b] text-xs lg:text-sm"></i>
-
-                    <div
-                        class="absolute -top-1 -right-1 bg-gradient-to-tr from-[#0891b2] to-[#06b6d4] text-white text-[6px] lg:text-[8px] font-semibold w-3 h-3 lg:w-4 lg:h-4 rounded-full flex items-center justify-center ">
-                        2
-                    </div>
-                </div>
-
-                <div class="relative">
-                    <input type="checkbox" id="dropdownToggle" class="peer hidden">
-
-                    <label for="dropdownToggle" class="flex flex-row gap-2 items-center justify-center cursor-pointer">
-                        <div
-                            class="p-2 lg:p-4 bg-gradient-to-tr from-cyan-700 to-cyan-500 rounded-full w-8 h-8 flex items-center justify-center">
-                            <i class="bi bi-person text-white text-lg"></i>
-                        </div>
-                        <div>
-                            <p class="text-sm font-medium text-slate-800">Thenmozhi</p>
-                            <p class="text-xs text-gray-500">thenmozhi@company.com</p>
-                        </div>
-                    </label>
-
-                    <div
-                        class="absolute right-0 mt-2 w-40 bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hidden peer-checked:flex flex-col">
-                        <a href="Profile.html"
-                            class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">
-                            <i class="bi bi-person text-gray-500"></i>
-                            View Account
-                        </a>
-                        <hr class="border border-gray-200">
-                        <a href="Signin.html"
-                            class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">
-                            <i class="bi bi-box-arrow-right text-gray-500"></i>
-                            Logout
-                        </a>
-                    </div>
-                </div>
+      <div class="hidden md:flex flex-row gap-4 items-center justify-center">
+        <div
+          class="relative border border-gray-200 p-2 w-5 h-5 lg:w-8 lg:h-8 rounded-2xl flex items-center justify-center">
+          <i class="bi bi-bell text-[#64748b] text-xs lg:text-sm"></i>
+          <div
+            class="absolute -top-1 -right-1 bg-gradient-to-tr from-[#0891b2] to-[#06b6d4] text-white text-[6px] lg:text-[8px] font-semibold w-3 h-3 lg:w-4 lg:h-4 rounded-full flex items-center justify-center">
+            2</div>
+        </div>
+        <div class="relative">
+          <input type="checkbox" id="dropdownToggle" class="peer hidden" />
+          <label for="dropdownToggle" class="flex flex-row gap-2 items-center justify-center cursor-pointer">
+            <div
+              class="p-2 lg:p-4 bg-gradient-to-tr from-cyan-700 to-cyan-500 rounded-full w-8 h-8 flex items-center justify-center">
+              <i class="bi bi-person text-white text-lg"></i>
             </div>
+            <div>
+              <p class="text-sm font-medium text-slate-800">Thenmozhi</p>
+              <p class="text-xs text-gray-500">thenmozhi@company.com</p>
+            </div>
+          </label>
+          <div
+            class="absolute right-0 mt-2 w-40 bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hidden peer-checked:flex flex-col">
+            <a href="Profile.html" class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">
+              <i class="bi bi-person text-gray-500"></i> View Account
+            </a>
+            <hr class="border border-gray-200" />
+            <a href="Signin.html" class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">
+              <i class="bi bi-box-arrow-right text-gray-500"></i> Logout
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="h-16 md:h-20"></div>
+
+    <div class="max-w-5xl mx-auto px-6 md:py-10 md:px-15 py-8">
+
+      <div class="flex flex-row gap-3 items-center mb-3">
+        <div class="w-10 lg:w-12 h-10 lg:h-12 rounded-xl flex items-center justify-center flex-shrink-0 ml-1.5"
+          style="background: linear-gradient(135deg, rgba(8, 145, 178, 0.08) 0%, rgba(139, 92, 246, 0.08) 100%)">
+          <i class="bi bi-plus-lg text-[#0891b2] text-xl font-semibold"></i>
+        </div>
+        <div class="flex flex-col">
+          <p class="font-[600] text-base md:text-lg lg:text-xl xl:text-2xl text-[#1e293b]">Add New AI Tool</p>
+          <p class="text-xs md:text-sm text-[#64748b] ">Share a new AI tool with the community</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-4 md:p-8 border border-[#0891b214] mt-5 md:mt-9">
+
+        <p class="text-[#1e293b] text-base xl:text-xl font-[600]">Basic Information</p>
+
+        <p class="text-sm text-[#1e293b] mt-7">Tool Logo</p>
+
+        <div class="mt-4 flex flex-col md:flex-row gap-4">
+          <div
+            class="w-full md:w-24 h-24 rounded-2xl flex items-center justify-center text-4xl cursor-pointer transition-all hover:scale-105 flex-shrink-0"
+            style="background: linear-gradient(135deg, rgba(8, 145, 178, 0.06) 0%, rgba(139, 92, 246, 0.06) 100%); border: 2px solid rgba(8, 145, 178, 0.12);">
+            🤖</div>
+
+          <div class="flex flex-col gap-3 flex-1 space-y-4">
+            <div class="border-2 border-[#0891b226] border-dashed rounded-2xl  p-7 text-center bg-[#0891b205]">
+              <i class="bi bi-upload text-[#64748b]"></i>
+              <p class="text-xs md:text-sm text-[#1e293b]">Drop your logo here or click to browse</p>
+              <p class="text-[#64748b] text-xs mt-2">PNG, JPG or SVG (max. 2MB)</p>
+            </div>
+            <div class="rounded-2xl border-[#0891b226] px-3 py-2 border w-fit">
+              <button class="text-xs text-[#64748b]">Or Seleted an Emoji Instead</button>
+            </div>
+          </div>
+
         </div>
 
-        <div class="max-w-5xl mx-auto  md:px-15 md:py-10 px-6 py-8">
-
-            <div class="flex flex-row gap-3 items-center mb-3">
-                <div class="w-10 lg:w-12 h-10 lg:h-12 rounded-xl flex items-center justify-center flex-shrink-0 ml-1.5"
-                    style="background: linear-gradient(135deg, rgba(8, 145, 178, 0.08) 0%, rgba(139, 92, 246, 0.08) 100%)">
-                    <i class="bi bi-plus-lg text-[#0891b2] text-xl font-semibold"></i>
-                </div>
-                <div class="flex flex-col">
-                    <p class="font-[600] text-base md:text-lg lg:text-xl xl:text-2xl text-[#1e293b]">Add New AI Tool</p>
-                    <p class="text-xs md:text-sm text-[#64748b] ">Share a new AI tool with the community</p>
-                </div>
+        <div class="mt-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
+            <div class="flex flex-col gap-2">
+              <label class="text-sm text-[#1e293b] font-medium">Tool Name <sup>*</sup></label>
+              <input
+                class="text-xs border border-[#0891b21f] p-3 rounded-2xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition"
+                placeholder="e.g, ChatGPT" />
             </div>
-
-            <div class="bg-white rounded-2xl p-8 border border-[#0891b214] mt-9">
-
-                <p class="text-[#1e293b] text-base xl:text-xl font-[600]">Basic Information</p>
-
-                <p class="text-sm text-[#1e293b] mt-7">Tool Logo</p>
-
-                <div class="mt-4 flex flex-col md:flex-row gap-4">
-                    <div class="w-24 h-24 rounded-2xl flex items-center justify-center text-4xl cursor-pointer transition-all hover:scale-105 flex-shrink-0"
-                        style="background: linear-gradient(135deg, rgba(8, 145, 178, 0.06) 0%, rgba(139, 92, 246, 0.06) 100%); border: 2px solid rgba(8, 145, 178, 0.12);">
-                        🤖</div>
-
-                    <div class="flex flex-col gap-3 flex-1 space-y-4">
-                        <div
-                            class="border-2 border-[#0891b226] border-dashed rounded-2xl  p-7 text-center bg-[#0891b205]">
-                            <i class="bi bi-upload text-[#64748b]"></i>
-                            <p class="text-xs md:text-sm text-[#1e293b]">Drop your logo here or click to browse</p>
-                            <p class="text-[#64748b] text-xs mt-2">PNG, JPG or SVG (max. 2MB)</p>
-                        </div>
-                        <div class="rounded-2xl border-[#0891b226] px-3 py-2 border w-fit">
-                            <button class="text-xs text-[#64748b]">Or Seleted an Emoji Instead</button>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="mt-4">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
-                        <div class="flex flex-col gap-2">
-                            <label class="text-sm text-[#1e293b] font-medium">Tool Name <sup>*</sup></label>
-                            <input
-                                class="text-xs border border-[#0891b21f] p-3 rounded-2xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition"
-                                placeholder="e.g, ChatGPT" />
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <label class="text-sm text-[#1e293b] font-medium">Taglin <sup>*</sup></label>
-                            <input
-                                class="text-xs border border-[#0891b21f] p-3 rounded-2xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition"
-                                placeholder="Brief description of the tool" />
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <label class="text-sm text-[#1e293b] font-medium">Category <sup>*</sup></label>
-                            <input
-                                class="text-xs border border-[#0891b21f] p-3 rounded-2xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition"
-                                placeholder="select category" />
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <label class="text-sm text-[#1e293b] font-medium">Pricing <sup>*</sup></label>
-                            <input
-                                class="text-xs border border-[#0891b21f] p-3 rounded-2xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition"
-                                placeholder="select pricing" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="p-5 rounded-xl mt-6"
-                    style="border: 1px solid rgba(8, 145, 178, 0.1); background: rgba(8, 145, 178, 0.02);">
-
-                    <div class="flex items-start gap-4">
-                        <button
-                            class=" flex items-center gap-2 px-4 py-2.5 rounded-lg transition-all flex-shrink-0 text-[#64748b] text-xs"
-                            style="border: 1px solid rgba(8, 145, 178, 0.15);  background: white; font-weight: 500;"><i
-                                class="bi bi-plus-lg"></i> Create New Category</button>
-                    </div>
-                </div>
-
-                <div class="mt-6 ">
-                    <div class="flex flex-col text-sm text-[#1e293b] gap-3">
-                        <label class="text-[#1e293b] text-sm font-medium">WebSite URL <sup>*</sup></label>
-                        <input placeholder="https://example.com"
-                            class="text-xs border border-[#0891b21f] p-3 rounded-2xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition" />
-                    </div>
-                </div>
-
+            <div class="flex flex-col gap-2">
+              <label class="text-sm text-[#1e293b] font-medium">Taglin <sup>*</sup></label>
+              <input
+                class="text-xs border border-[#0891b21f] p-3 rounded-2xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition"
+                placeholder="Brief description of the tool" />
             </div>
-
-            <div class="bg-white rounded-2xl p-8 border border-[#0891b214] mt-9">
-
-                <p class=" text-base xl:text-xl text-[#1e293b] font-medium mb-8">Overview</p>
-
-                <div class="flex flex-col gap-3">
-                    <label class="text-sm text-[#1e293b] font-medium">Tool Overview <sup>*</sup></label>
-                    <textarea
-                        class="h-40 text-xs border border-[#0891b21f] p-3 rounded-2xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition"
-                        placeholder="Provide a detailed description of what the tool does, its main purpose, and who it's for..."></textarea>
-                    <p class="text-xs text-[#64748b]">0 Characters</p>
-                </div>
-
+            <div class="flex flex-col gap-2">
+              <label class="text-sm text-[#1e293b] font-medium">Category <sup>*</sup></label>
+              <input
+                class="text-xs border border-[#0891b21f] p-3 rounded-2xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition"
+                placeholder="select category" />
             </div>
-
-            <div class="bg-white rounded-2xl p-8 border border-[#0891b214] mt-9">
-                <div class="flex flex-col md:flex-row justify-between items-center gap-4 mg:gap-0">
-                    <p class=" text-base xl:text-xl text-[#1e293b] font-medium ">Key Benefits</p>
-                    <button class="text-xs text-[#1e293b] font-medium border border-[#0891b21f] rounded-2xl p-2"><i
-                            class="bi bi-plus-lg"></i> Add Benefit</button>
-                </div>
-                <div class="flex flex-row items-center gap-3 mt-4">
-                    <div class="bg-[#0891b214] p-2 rounded-full w-10 h-8 md:h-10 flex items-center justify-center"><i
-                            class="bi bi-check2 text-[#0891b2]"></i></div>
-                    <input placeholder="e.g., generator professtional image in seconds"
-                        class="w-full text-xs border border-[#0891b21f] p-3 rounded-2xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition" />
-
-                </div>
+            <div class="flex flex-col gap-2">
+              <label class="text-sm text-[#1e293b] font-medium">Pricing <sup>*</sup></label>
+              <input
+                class="text-xs border border-[#0891b21f] p-3 rounded-2xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition"
+                placeholder="select pricing" />
             </div>
-
-            <div class="bg-white rounded-2xl p-8 border border-[#0891b214] mt-9">
-                <div class="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
-
-                    <p class=" text-base xl:text-xl text-[#1e293b] font-medium ">Main Features</p>
-                    <button class="text-xs text-[#1e293b] font-medium border border-[#0891b21f] rounded-2xl p-2"><i
-                            class="bi bi-plus-lg"></i> Add Features</button>
-                </div>
-                <div class="mt-8 p-7 rounded-2xl"
-                    style="border: 1px solid rgba(8, 145, 178, 0.1); background: rgba(8, 145, 178, 0.02);">
-
-                    <p>Feature Icon</p>
-
-                    <div class="flex flex-wrap items-center gap-3 mt-5">
-
-                        <button
-                            class="border border-[#0891b21f] p-2 rounded-full w-10 h-10 flex items-center justify-center 
-           transition-all duration-200 focus:outline-none
-           hover:border-[#0891b2] hover:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] hover:text-[#0891b2]
-           focus:border-[#0891b2] focus:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] focus:text-[#0891b2]
-           active:border-[#0891b2] active:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] active:text-[#0891b2] text-[#64748b]">
-                            <i class="bi bi-palette"></i>
-                        </button>
-
-                        <button
-                            class="border border-[#0891b21f] p-2 rounded-full w-10 h-10 flex items-center justify-center 
-           transition-all duration-200 focus:outline-none
-           hover:border-[#0891b2] hover:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] hover:text-[#0891b2]
-           focus:border-[#0891b2] focus:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] focus:text-[#0891b2]
-           active:border-[#0891b2] active:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] active:text-[#0891b2] text-[#64748b]">
-                            <i class="bi bi-shield"></i>
-                        </button>
-
-                        <button
-                            class="border border-[#0891b21f] p-2 rounded-full w-10 h-10 flex items-center justify-center 
-           transition-all duration-200 focus:outline-none
-           hover:border-[#0891b2] hover:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] hover:text-[#0891b2]
-           focus:border-[#0891b2] focus:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] focus:text-[#0891b2]
-           active:border-[#0891b2] active:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] active:text-[#0891b2] text-[#64748b]">
-                            <i class="bi bi-lightning-charge"></i>
-                        </button>
-
-                        <button
-                            class="border border-[#0891b21f] p-2 rounded-full w-10 h-10 flex items-center justify-center 
-           transition-all duration-200 focus:outline-none
-           hover:border-[#0891b2] hover:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] hover:text-[#0891b2]
-           focus:border-[#0891b2] focus:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] focus:text-[#0891b2]
-           active:border-[#0891b2] active:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] active:text-[#0891b2] text-[#64748b]">
-                            <i class="bi bi-code"></i>
-                        </button>
-
-                        <button
-                            class="border border-[#0891b21f] p-2 rounded-full w-10 h-10 flex items-center justify-center 
-           transition-all duration-200 focus:outline-none
-           hover:border-[#0891b2] hover:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] hover:text-[#0891b2]
-           focus:border-[#0891b2] focus:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] focus:text-[#0891b2]
-           active:border-[#0891b2] active:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] active:text-[#0891b2] text-[#64748b]">
-                            <i class="bi bi-chat-left"></i>
-                        </button>
-
-                        <button
-                            class="border border-[#0891b21f] p-2 rounded-full w-10 h-10 flex items-center justify-center 
-           transition-all duration-200 focus:outline-none
-           hover:border-[#0891b2] hover:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] hover:text-[#0891b2]
-           focus:border-[#0891b2] focus:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] focus:text-[#0891b2]
-           active:border-[#0891b2] active:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] active:text-[#0891b2] text-[#64748b]">
-                            <i class="bi bi-people"></i>
-                        </button>
-
-                        <button
-                            class="border border-[#0891b21f] p-2 rounded-full w-10 h-10 flex items-center justify-center 
-           transition-all duration-200 focus:outline-none
-           hover:border-[#0891b2] hover:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] hover:text-[#0891b2]
-           focus:border-[#0891b2] focus:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] focus:text-[#0891b2]
-           active:border-[#0891b2] active:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] active:text-[#0891b2] text-[#64748b]">
-                            <i class="bi bi-mortarboard"></i>
-                        </button>
-
-                        <button
-                            class="border border-[#0891b21f] p-2 rounded-full w-10 h-10 flex items-center justify-center 
-           transition-all duration-200 focus:outline-none
-           hover:border-[#0891b2] hover:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] hover:text-[#0891b2]
-           focus:border-[#0891b2] focus:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] focus:text-[#0891b2]
-           active:border-[#0891b2] active:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] active:text-[#0891b2] text-[#64748b]">
-                            <i class="bi bi-bag-heart"></i>
-                        </button>
-
-                        <button
-                            class="border border-[#0891b21f] p-2 rounded-full w-10 h-10 flex items-center justify-center 
-           transition-all duration-200 focus:outline-none
-           hover:border-[#0891b2] hover:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] hover:text-[#0891b2]
-           focus:border-[#0891b2] focus:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] focus:text-[#0891b2]
-           active:border-[#0891b2] active:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] active:text-[#0891b2] text-[#64748b]">
-                            <i class="bi bi-record-circle"></i>
-                        </button>
-
-                        <button
-                            class="border border-[#0891b21f] p-2 rounded-full w-10 h-10 flex items-center justify-center 
-           transition-all duration-200 focus:outline-none
-           hover:border-[#0891b2] hover:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] hover:text-[#0891b2]
-           focus:border-[#0891b2] focus:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] focus:text-[#0891b2]
-           active:border-[#0891b2] active:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] active:text-[#0891b2] text-[#64748b]">
-                            <i class="bi bi-airplane"></i>
-                        </button>
-
-                        <button
-                            class="border border-[#0891b21f] p-2 rounded-full w-10 h-10 flex items-center justify-center 
-           transition-all duration-200 focus:outline-none
-           hover:border-[#0891b2] hover:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] hover:text-[#0891b2]
-           focus:border-[#0891b2] focus:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] focus:text-[#0891b2]
-           active:border-[#0891b2] active:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] active:text-[#0891b2] text-[#64748b]">
-                            <i class="bi bi-sort-up"></i>
-                        </button>
-
-                    </div>
-
-                    <div class="mt-8 flex flex-col gap-4">
-                        <div class="flex flex-col gap-2">
-                            <label class="text-sm text-[#1e293b] font-medium">Feature Title</label>
-                            <input
-                                class="text-xs border border-[#0891b21f] p-3 rounded-2xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition"
-                                placeholder="e.g, Text to image generation" />
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <label class="text-sm text-[#1e293b] font-medium">Feature Description</label>
-                            <input
-                                class="text-xs border border-[#0891b21f] p-3 rounded-2xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition"
-                                placeholder="e.g, Convert text promots into  stunning visuals" />
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="bg-white rounded-2xl p-8 border border-[#0891b214] mt-9">
-                <div class="flex flex-row justify-between items-center mb-8">
-                    <p class=" text-base xl:text-xl text-[#1e293b] font-medium ">Pros & Cons</p>
-
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="flex flex-row items-center justify-between">
-                        <div class="flex gap-2 items-center flex-row">
-                            <div class="text-sm"><i class="bi bi-check2 text-green-500 text-base"></i> </div>
-                            <div class="text-sm">Positives</div>
-                        </div>
-                        <div><i class="bi bi-plus"></i></div>
-                    </div>
-
-                    <div class="flex flex-row items-center justify-between">
-                        <div class="flex gap-2 items-center flex-row">
-                            <div class="text-sm"><i class="bi bi-x text-red-500 text-base"></i> </div>
-                            <div class="text-sm">Cansiderations</div>
-                        </div>
-                        <div><i class="bi bi-plus"></i></div>
-                    </div>
-
-                    <div class="flex flex-row gap-3 items-center justify-between">
-                        <div class="text-sm"><i class="bi bi-check2 text-green-500 text-base"></i> </div>
-                        <input placeholder="Add a positive aspect"
-                            class="w-full text-xs md:text-sm border border-[#0891b21f] p-3 rounded-2xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition" />
-                    </div>
-
-
-                    <div class="flex flex-row items-center gap-3 justify-between">
-                        <div class="text-sm"><i class="bi bi-x text-red-500 text-base"></i> </div>
-                        <input placeholder="Add a consideration"
-                            class="w-full text-xs md:text-sm border border-[#0891b21f] p-3 rounded-2xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition" />
-                    </div>
-
-                </div>
-
-                <div class="bg-white rounded-2xl p-4 md:p-8 border border-[#0891b214]  mt-9">
-                    <div class="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
-                        <p class=" text-base xl:text-xl text-[#1e293b] font-medium ">Best Use Cases</p>
-                        <button class="text-xs text-[#1e293b] font-medium border border-[#0891b21f] rounded-2xl p-2"><i
-                                class="bi bi-plus-lg"></i> Add Use Case</button>
-                    </div>
-                    <div
-                        class="flex flex-row items-center gap-3 mt-5 border border-[#0891b21f] bg-[#0891b205] p-3 md:p-6 rounded-2xl">
-                        <div class="bg-[#0891b214] p-2 rounded-full w-10 h-8 md:h-10 flex items-center justify-center">
-                            <i class="bi bi-suitcase-lg text-[#0891b2]"></i>
-                        </div>
-                        <input placeholder="e.g., Perfect for maketing teams creating unique campaign visual"
-                            class="w-full text-xs font-medium border border-[#0891b21f] bg-white p-3 rounded-2xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition" />
-
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="bg-white rounded-2xl p-8 border border-[#0891b214]  mt-9">
-                <p class=" text-base xl:text-xl text-[#1e293b] font-medium mb-8">Tool Results Output</p>
-                <p class="text-xs text-[#64748b] mb-8">Add up to 6 example images showing the tool's output or interface
-                </p>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div class="flex flex-col items-center md:items-start justify-center">
-                        <p>Image 1</p>
-                        <div class="mt-3 rounded-xl flex flex-col items-center justify-center cursor-pointer transition-all h-50 w-60"
-                            style="border: 2px dashed rgba(8, 145, 178, 0.15); background: rgba(8, 145, 178, 0.02); ">
-                            <i class="bi bi-image text-[#64748b] text-base"></i>
-                            <p class="text-[#64748b] text-xs">Click to add image</p>
-                        </div>
-                        <input placeholder="Image URL"
-                            class="mt-3 w-60 text-xs border border-[#0891b21f] px-2 py-3 rounded-xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition" />
-
-                    </div>
-
-                    <div class="flex flex-col items-center md:items-start justify-center">
-                        <p>Image 2</p>
-                        <div class="mt-3 rounded-xl flex flex-col items-center justify-center cursor-pointer transition-all h-50 w-60"
-                            style="border: 2px dashed rgba(8, 145, 178, 0.15); background: rgba(8, 145, 178, 0.02); ">
-                            <i class="bi bi-image text-[#64748b] text-base"></i>
-                            <p class="text-[#64748b] text-xs">Click to add image</p>
-                        </div>
-                        <input placeholder="Image URL"
-                            class="mt-3 w-60 text-xs border border-[#0891b21f] px-2 py-3 rounded-xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition" />
-
-                    </div>
-
-                    <div class="flex flex-col items-center md:items-start justify-center">
-                        <p>Image 3</p>
-                        <div class="mt-3 rounded-xl flex flex-col items-center justify-center cursor-pointer transition-all h-50 w-60"
-                            style="border: 2px dashed rgba(8, 145, 178, 0.15); background: rgba(8, 145, 178, 0.02); ">
-                            <i class="bi bi-image text-[#64748b] text-base"></i>
-                            <p class="text-[#64748b] text-xs">Click to add image</p>
-                        </div>
-                        <input placeholder="Image URL"
-                            class="mt-3 w-60 text-xs border border-[#0891b21f] px-2 py-3 rounded-xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition" />
-
-                    </div>
-
-                    <div class="flex flex-col items-center md:items-start justify-center">
-                        <p>Image 4</p>
-                        <div class="mt-3 rounded-xl flex flex-col items-center justify-center cursor-pointer transition-all h-50 w-60"
-                            style="border: 2px dashed rgba(8, 145, 178, 0.15); background: rgba(8, 145, 178, 0.02); ">
-                            <i class="bi bi-image text-[#64748b] text-base"></i>
-                            <p class="text-[#64748b] text-xs">Click to add image</p>
-                        </div>
-                        <input placeholder="Image URL"
-                            class="mt-3 w-60 text-xs border border-[#0891b21f] px-2 py-3 rounded-xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition" />
-
-                    </div>
-
-                    <div class="flex flex-col items-center md:items-start justify-center">
-                        <p>Image 5</p>
-                        <div class="mt-3 rounded-xl flex flex-col items-center justify-center cursor-pointer transition-all h-50 w-60"
-                            style="border: 2px dashed rgba(8, 145, 178, 0.15); background: rgba(8, 145, 178, 0.02); ">
-                            <i class="bi bi-image text-[#64748b] text-base"></i>
-                            <p class="text-[#64748b] text-xs">Click to add image</p>
-                        </div>
-                        <input placeholder="Image URL"
-                            class="mt-3 w-60 text-xs border border-[#0891b21f] px-2 py-3 rounded-xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition" />
-
-                    </div>
-
-                    <div class="flex flex-col items-center md:items-start justify-center">
-                        <p>Image 6</p>
-                        <div class="mt-3 rounded-xl flex flex-col items-center justify-center cursor-pointer transition-all h-50 w-60"
-                            style="border: 2px dashed rgba(8, 145, 178, 0.15); background: rgba(8, 145, 178, 0.02); ">
-                            <i class="bi bi-image text-[#64748b] text-base"></i>
-                            <p class="text-[#64748b] text-xs">Click to add image</p>
-                        </div>
-                        <input placeholder="Image URL"
-                            class="mt-3 w-60 text-xs border border-[#0891b21f] px-2 py-3 rounded-xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition" />
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <hr class="mt-8 text-gray-200" />
-
-
-            <div class="mt-8 flex flex-row justify-end gap-4">
-                <button class="text-sm rounded-lg p-2 text-sm text-[#1e293b]"
-                    style="border: 1px solid rgba(8, 145, 178, 0.15);">Cancel</button>
-                <button class="rounded-lg p-2 text-white text-sm"
-                    style="background: linear-gradient(135deg, rgb(8, 145, 178) 0%, rgb(6, 182, 212) 100%);">Add
-                    Tool</button>
-            </div>
-
-            <div class=" fixed bottom-1 lg:bottom-4 right-2 md:right-6">
-                <div
-                    class="p-4 bg-gradient-to-tr from-cyan-700 to-cyan-500 rounded-full w-10 h-10 items-center justify-center flex">
-                    <i class="bi bi-stars text-white"></i>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="p-5 rounded-xl mt-6"
+          style="border: 1px solid rgba(8, 145, 178, 0.1); background: rgba(8, 145, 178, 0.02);">
+
+          <div class="flex items-start gap-4">
+            <button
+              class=" flex items-center gap-2 px-4 py-2.5 rounded-lg transition-all flex-shrink-0 text-[#64748b] text-xs"
+              style="border: 1px solid rgba(8, 145, 178, 0.15);  background: white; font-weight: 500;"><i
+                class="bi bi-plus-lg"></i> Create New Category</button>
+          </div>
+        </div>
+
+        <div class="mt-6 ">
+          <div class="flex flex-col text-sm text-[#1e293b] gap-3">
+            <label class="text-[#1e293b] text-sm font-medium">WebSite URL <sup>*</sup></label>
+            <input placeholder="https://example.com"
+              class="text-xs border border-[#0891b21f] p-3 rounded-2xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition" />
+          </div>
+        </div>
+
+      </div>
+
+      <div class="bg-white rounded-2xl p-4 md:p-8 border border-[#0891b214] mt-9">
+
+        <p class=" text-base xl:text-xl text-[#1e293b] font-medium mb-4 md:mb-8">Overview</p>
+
+        <div class="flex flex-col gap-3">
+          <label class="text-sm text-[#1e293b] font-medium">Tool Overview <sup>*</sup></label>
+          <textarea
+            class="h-20 md:h-40 text-xs border border-[#0891b21f] p-3 rounded-2xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition"
+            placeholder="Provide a detailed description of what the tool does, its main purpose, and who it's for..."></textarea>
+          <p class="text-xs text-[#64748b]">0 Characters</p>
+        </div>
+
+      </div>
+
+      <div class="bg-white rounded-2xl p-4 md:p-8 border border-[#0891b214] mt-9">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 mg:gap-0">
+          <p class=" text-base xl:text-xl text-[#1e293b] font-medium ">Key Benefits</p>
+          <button class="text-xs text-[#1e293b] font-medium border border-[#0891b21f] rounded-2xl p-2"><i
+              class="bi bi-plus-lg"></i> Add Benefit</button>
+        </div>
+        <div class="flex flex-row items-center gap-3 mt-4">
+          <div class="bg-[#0891b214] p-2 rounded-full w-10 h-8 md:h-10 flex items-center justify-center"><i
+              class="bi bi-check2 text-[#0891b2]"></i></div>
+          <input placeholder="e.g., generator professtional image in seconds"
+            class="w-full text-xs border border-[#0891b21f] p-3 rounded-2xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition" />
+
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-4 md:p-8 border border-[#0891b214] mt-9">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
+
+          <p class=" text-base xl:text-xl text-[#1e293b] font-medium ">Main Features</p>
+          <button class="text-xs text-[#1e293b] font-medium border border-[#0891b21f] rounded-2xl p-2"><i
+              class="bi bi-plus-lg"></i> Add Features</button>
+        </div>
+        <div class="mt-8 p-7 rounded-2xl"
+          style="border: 1px solid rgba(8, 145, 178, 0.1); background: rgba(8, 145, 178, 0.02);">
+
+          <p>Feature Icon</p>
+
+          <div class="flex flex-wrap items-center gap-3 mt-5">
+
+            <button
+              class="border border-[#0891b21f] p-2 rounded-full w-10 h-10 flex items-center justify-center 
+           transition-all duration-200 focus:outline-none
+           hover:border-[#0891b2] hover:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] hover:text-[#0891b2]
+           focus:border-[#0891b2] focus:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] focus:text-[#0891b2]
+           active:border-[#0891b2] active:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] active:text-[#0891b2] text-[#64748b]">
+              <i class="bi bi-palette"></i>
+            </button>
+
+            <button
+              class="border border-[#0891b21f] p-2 rounded-full w-10 h-10 flex items-center justify-center 
+           transition-all duration-200 focus:outline-none
+           hover:border-[#0891b2] hover:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] hover:text-[#0891b2]
+           focus:border-[#0891b2] focus:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] focus:text-[#0891b2]
+           active:border-[#0891b2] active:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] active:text-[#0891b2] text-[#64748b]">
+              <i class="bi bi-shield"></i>
+            </button>
+
+            <button
+              class="border border-[#0891b21f] p-2 rounded-full w-10 h-10 flex items-center justify-center 
+           transition-all duration-200 focus:outline-none
+           hover:border-[#0891b2] hover:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] hover:text-[#0891b2]
+           focus:border-[#0891b2] focus:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] focus:text-[#0891b2]
+           active:border-[#0891b2] active:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] active:text-[#0891b2] text-[#64748b]">
+              <i class="bi bi-lightning-charge"></i>
+            </button>
+
+            <button
+              class="border border-[#0891b21f] p-2 rounded-full w-10 h-10 flex items-center justify-center 
+           transition-all duration-200 focus:outline-none
+           hover:border-[#0891b2] hover:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] hover:text-[#0891b2]
+           focus:border-[#0891b2] focus:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] focus:text-[#0891b2]
+           active:border-[#0891b2] active:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] active:text-[#0891b2] text-[#64748b]">
+              <i class="bi bi-code"></i>
+            </button>
+
+            <button
+              class="border border-[#0891b21f] p-2 rounded-full w-10 h-10 flex items-center justify-center 
+           transition-all duration-200 focus:outline-none
+           hover:border-[#0891b2] hover:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] hover:text-[#0891b2]
+           focus:border-[#0891b2] focus:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] focus:text-[#0891b2]
+           active:border-[#0891b2] active:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] active:text-[#0891b2] text-[#64748b]">
+              <i class="bi bi-chat-left"></i>
+            </button>
+
+            <button
+              class="border border-[#0891b21f] p-2 rounded-full w-10 h-10 flex items-center justify-center 
+           transition-all duration-200 focus:outline-none
+           hover:border-[#0891b2] hover:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] hover:text-[#0891b2]
+           focus:border-[#0891b2] focus:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] focus:text-[#0891b2]
+           active:border-[#0891b2] active:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] active:text-[#0891b2] text-[#64748b]">
+              <i class="bi bi-people"></i>
+            </button>
+
+            <button
+              class="border border-[#0891b21f] p-2 rounded-full w-10 h-10 flex items-center justify-center 
+           transition-all duration-200 focus:outline-none
+           hover:border-[#0891b2] hover:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] hover:text-[#0891b2]
+           focus:border-[#0891b2] focus:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] focus:text-[#0891b2]
+           active:border-[#0891b2] active:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] active:text-[#0891b2] text-[#64748b]">
+              <i class="bi bi-mortarboard"></i>
+            </button>
+
+            <button
+              class="border border-[#0891b21f] p-2 rounded-full w-10 h-10 flex items-center justify-center 
+           transition-all duration-200 focus:outline-none
+           hover:border-[#0891b2] hover:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] hover:text-[#0891b2]
+           focus:border-[#0891b2] focus:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] focus:text-[#0891b2]
+           active:border-[#0891b2] active:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] active:text-[#0891b2] text-[#64748b]">
+              <i class="bi bi-bag-heart"></i>
+            </button>
+
+            <button
+              class="border border-[#0891b21f] p-2 rounded-full w-10 h-10 flex items-center justify-center 
+           transition-all duration-200 focus:outline-none
+           hover:border-[#0891b2] hover:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] hover:text-[#0891b2]
+           focus:border-[#0891b2] focus:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] focus:text-[#0891b2]
+           active:border-[#0891b2] active:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] active:text-[#0891b2] text-[#64748b]">
+              <i class="bi bi-record-circle"></i>
+            </button>
+
+            <button
+              class="border border-[#0891b21f] p-2 rounded-full w-10 h-10 flex items-center justify-center 
+           transition-all duration-200 focus:outline-none
+           hover:border-[#0891b2] hover:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] hover:text-[#0891b2]
+           focus:border-[#0891b2] focus:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] focus:text-[#0891b2]
+           active:border-[#0891b2] active:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] active:text-[#0891b2] text-[#64748b]">
+              <i class="bi bi-airplane"></i>
+            </button>
+
+            <button
+              class="border border-[#0891b21f] p-2 rounded-full w-10 h-10 flex items-center justify-center 
+           transition-all duration-200 focus:outline-none
+           hover:border-[#0891b2] hover:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] hover:text-[#0891b2]
+           focus:border-[#0891b2] focus:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] focus:text-[#0891b2]
+           active:border-[#0891b2] active:bg-[linear-gradient(135deg,rgba(8,145,178,0.08)_0%,rgba(139,92,246,0.08)_100%)] active:text-[#0891b2] text-[#64748b]">
+              <i class="bi bi-sort-up"></i>
+            </button>
+
+          </div>
+
+          <div class="mt-8 flex flex-col gap-4">
+            <div class="flex flex-col gap-2">
+              <label class="text-sm text-[#1e293b] font-medium">Feature Title</label>
+              <input
+                class="text-xs border border-[#0891b21f] p-3 rounded-2xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition"
+                placeholder="e.g, Text to image generation" />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label class="text-sm text-[#1e293b] font-medium">Feature Description</label>
+              <input
+                class="text-xs border border-[#0891b21f] p-3 rounded-2xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition"
+                placeholder="e.g, Convert text promots into  stunning visuals" />
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="bg-white rounded-2xl p-4 md:p-8 border border-[#0891b214] mt-9">
+        <div class="flex flex-row justify-between items-center mb-8">
+          <p class=" text-base xl:text-xl text-[#1e293b] font-medium ">Pros & Cons</p>
+
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="flex flex-row items-center justify-between">
+            <div class="flex gap-2 items-center flex-row">
+              <div class="text-sm"><i class="bi bi-check2 text-green-500 text-base"></i> </div>
+              <div class="text-sm">Positives</div>
+            </div>
+            <div><i class="bi bi-plus"></i></div>
+          </div>
+
+          <div class="flex flex-row items-center justify-between">
+            <div class="flex gap-2 items-center flex-row">
+              <div class="text-sm"><i class="bi bi-x text-red-500 text-base"></i> </div>
+              <div class="text-sm">Cansiderations</div>
+            </div>
+            <div><i class="bi bi-plus"></i></div>
+          </div>
+
+          <div class="flex flex-row gap-3 items-center justify-between">
+            <div class="text-sm"><i class="bi bi-check2 text-green-500 text-base"></i> </div>
+            <input placeholder="Add a positive aspect"
+              class="w-full text-xs md:text-sm border border-[#0891b21f] p-3 rounded-2xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition" />
+          </div>
+
+
+          <div class="flex flex-row items-center gap-3 justify-between">
+            <div class="text-sm"><i class="bi bi-x text-red-500 text-base"></i> </div>
+            <input placeholder="Add a consideration"
+              class="w-full text-xs md:text-sm border border-[#0891b21f] p-3 rounded-2xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition" />
+          </div>
+
+        </div>
+
+        <div class="bg-white rounded-2xl p-4 md:p-8 border border-[#0891b214]  mt-9">
+          <div class="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
+            <p class=" text-base xl:text-xl text-[#1e293b] font-medium ">Best Use Cases</p>
+            <button class="text-xs text-[#1e293b] font-medium border border-[#0891b21f] rounded-2xl p-2"><i
+                class="bi bi-plus-lg"></i> Add Use Case</button>
+          </div>
+          <div
+            class="flex flex-row items-center gap-3 mt-5 border border-[#0891b21f] bg-[#0891b205] p-3 md:p-6 rounded-2xl">
+            <div class="bg-[#0891b214] p-2 rounded-full w-10 h-8 md:h-10 flex items-center justify-center">
+              <i class="bi bi-suitcase-lg text-[#0891b2]"></i>
+            </div>
+            <input placeholder="e.g., Perfect for maketing teams creating unique campaign visual"
+              class="w-full text-xs font-medium border border-[#0891b21f] bg-white p-3 rounded-2xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition" />
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="bg-white rounded-2xl p-4 md:p-8 border border-[#0891b214]  mt-9">
+        <p class=" text-base xl:text-xl text-[#1e293b] font-medium mb-4 md:mb-8">Tool Results Output</p>
+        <p class="text-xs text-[#64748b] mb-8">Add up to 6 example images showing the tool's output or interface
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="flex flex-col items-center md:items-start justify-center">
+            <p>Image 1</p>
+            <div
+              class="mt-3 rounded-xl flex flex-col items-center justify-center cursor-pointer transition-all h-50 w-60"
+              style="border: 2px dashed rgba(8, 145, 178, 0.15); background: rgba(8, 145, 178, 0.02); ">
+              <i class="bi bi-image text-[#64748b] text-base"></i>
+              <p class="text-[#64748b] text-xs">Click to add image</p>
+            </div>
+            <input placeholder="Image URL"
+              class="mt-3 w-60 text-xs border border-[#0891b21f] px-2 py-3 rounded-xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition" />
+
+          </div>
+
+          <div class="flex flex-col items-center md:items-start justify-center">
+            <p>Image 2</p>
+            <div
+              class="mt-3 rounded-xl flex flex-col items-center justify-center cursor-pointer transition-all h-50 w-60"
+              style="border: 2px dashed rgba(8, 145, 178, 0.15); background: rgba(8, 145, 178, 0.02); ">
+              <i class="bi bi-image text-[#64748b] text-base"></i>
+              <p class="text-[#64748b] text-xs">Click to add image</p>
+            </div>
+            <input placeholder="Image URL"
+              class="mt-3 w-60 text-xs border border-[#0891b21f] px-2 py-3 rounded-xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition" />
+
+          </div>
+
+          <div class="flex flex-col items-center md:items-start justify-center">
+            <p>Image 3</p>
+            <div
+              class="mt-3 rounded-xl flex flex-col items-center justify-center cursor-pointer transition-all h-50 w-60"
+              style="border: 2px dashed rgba(8, 145, 178, 0.15); background: rgba(8, 145, 178, 0.02); ">
+              <i class="bi bi-image text-[#64748b] text-base"></i>
+              <p class="text-[#64748b] text-xs">Click to add image</p>
+            </div>
+            <input placeholder="Image URL"
+              class="mt-3 w-60 text-xs border border-[#0891b21f] px-2 py-3 rounded-xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition" />
+
+          </div>
+
+          <div class="flex flex-col items-center md:items-start justify-center">
+            <p>Image 4</p>
+            <div
+              class="mt-3 rounded-xl flex flex-col items-center justify-center cursor-pointer transition-all h-50 w-60"
+              style="border: 2px dashed rgba(8, 145, 178, 0.15); background: rgba(8, 145, 178, 0.02); ">
+              <i class="bi bi-image text-[#64748b] text-base"></i>
+              <p class="text-[#64748b] text-xs">Click to add image</p>
+            </div>
+            <input placeholder="Image URL"
+              class="mt-3 w-60 text-xs border border-[#0891b21f] px-2 py-3 rounded-xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition" />
+
+          </div>
+
+          <div class="flex flex-col items-center md:items-start justify-center">
+            <p>Image 5</p>
+            <div
+              class="mt-3 rounded-xl flex flex-col items-center justify-center cursor-pointer transition-all h-50 w-60"
+              style="border: 2px dashed rgba(8, 145, 178, 0.15); background: rgba(8, 145, 178, 0.02); ">
+              <i class="bi bi-image text-[#64748b] text-base"></i>
+              <p class="text-[#64748b] text-xs">Click to add image</p>
+            </div>
+            <input placeholder="Image URL"
+              class="mt-3 w-60 text-xs border border-[#0891b21f] px-2 py-3 rounded-xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition" />
+
+          </div>
+
+          <div class="flex flex-col items-center md:items-start justify-center">
+            <p>Image 6</p>
+            <div
+              class="mt-3 rounded-xl flex flex-col items-center justify-center cursor-pointer transition-all h-50 w-60"
+              style="border: 2px dashed rgba(8, 145, 178, 0.15); background: rgba(8, 145, 178, 0.02); ">
+              <i class="bi bi-image text-[#64748b] text-base"></i>
+              <p class="text-[#64748b] text-xs">Click to add image</p>
+            </div>
+            <input placeholder="Image URL"
+              class="mt-3 w-60 text-xs border border-[#0891b21f] px-2 py-3 rounded-xl outline-none focus-within:ring-2 focus-within:ring-blue-300 focus-within:border-blue-500 transition" />
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <hr class="mt-8 text-gray-200" />
+
+
+      <div class="mt-8 flex flex-row justify-end gap-4">
+        <button class="text-sm rounded-lg p-2 text-sm text-[#1e293b]"
+          style="border: 1px solid rgba(8, 145, 178, 0.15);">Cancel</button>
+        <button class="rounded-lg p-2 text-white text-sm"
+          style="background: linear-gradient(135deg, rgb(8, 145, 178) 0%, rgb(6, 182, 212) 100%);">Add
+          Tool</button>
+      </div>
+
+      <div class=" fixed bottom-1 lg:bottom-4 right-2 md:right-6">
+        <div
+          class="p-4 bg-gradient-to-tr from-cyan-700 to-cyan-500 rounded-full w-10 h-10 items-center justify-center flex">
+          <i class="bi bi-stars text-white"></i>
+        </div>
+      </div>
+    </div>
 </body>
 
 </html>
